@@ -890,7 +890,7 @@ The following properties are used by demand volatility metrics:
     - relativePositiveDeviation
     - relativeNegativeDeviation
 
-Suppliers use `startReferenceDateTime` to define the start of the demand volatility metric calculation, it is also marks the start of the first measurement interval. Its value MUST be chosen, so that transfer times are considered, allowing the customer to consume the data while `startReferenceDateTime` is still larger than the customer´s system time. It is RECOMMENDED to allow for a grace period of at least 24 hours.
+Suppliers use `startReferenceDateTime` to define the start of the demand volatility metric calculation, it also marks the start of the first measurement interval. Its value MUST be chosen, so that transfer times are considered, allowing the customer to consume the data while `startReferenceDateTime` is still larger than the customer´s system time. It is RECOMMENDED to allow for a grace period of at least 24 hours.
 
 In order to get the start of any subsequent measurement intervals the value of `measurementInterval` needs to be converted from integer to weeks and added to `startReferenceDateTime`.
 
